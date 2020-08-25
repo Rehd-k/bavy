@@ -1,0 +1,39 @@
+.title {
+    font-size: 20px;
+    color: #343a40;
+    font-weight: bold;
+    line-height: 25px;
+    
+}
+.price {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #000000;
+}
+.mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+  }
+.color-select {
+    font-size: 20px;
+    padding-right: 1px;
+}
+
+div.scrollmenu {
+    background-color: #fff;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  
+  .no-padding {
+    padding: 0!important;
+    margin-right: 20px;
+  }
+  .r-btn {
+      text-align: start;
+  }
+  .r-title {
+      width: 120px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis
+  }

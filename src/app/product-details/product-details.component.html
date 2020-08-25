@@ -1,0 +1,234 @@
+<div class="container-fluid">
+    <div class="title py-4">
+        LongSleeve Main title
+    </div>
+    <div class="grid">
+        <div class="row">
+            <div class="col-12 col-md-6 p-lg-5 p-md-5 p-3 mt-lg-5 mt-md-5">
+                <mdb-carousel [animation]="'slide'" [interval]="'0'">
+                    <mdb-carousel-item>
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(130).jpg"
+                            alt="First slide">
+                    </mdb-carousel-item>
+                    <mdb-carousel-item>
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
+                            alt="Second slide">
+                    </mdb-carousel-item>
+                    <mdb-carousel-item>
+                        <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg"
+                            alt="Third slide">
+                    </mdb-carousel-item>
+                </mdb-carousel>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="col-12">
+                    <div class="title text-capitalize text-bold"> Fashion By LV Men’s Office Corporate Formal Shirts 4
+                        In 1</div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12 py-1">
+                    <div class="barnd"> Barnd:<button mat-button [routerLink]="['/brands/']">the Brand name</button>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12 pt-4 pb-4">
+                    <div class="row">
+                        <div class="price col-4"><s>N</s>300,000</div>
+                        <div class="discount col-8"> if discount </div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12 py-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="color-select">color:</span>
+                        </div>
+                        <div class="col-8">
+                            <mat-select placeholder="Select size">
+                                <mat-option [value]="'val'">house</mat-option>
+                                <mat-option [value]="'val'">house</mat-option>
+                                <mat-option [value]="'val'">house</mat-option>
+                                <mat-option [value]="'val'">house</mat-option>
+                            </mat-select>
+                        </div>
+
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12 py-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="color-select">Size:</span>
+                        </div>
+                        <div class="col-8">
+                            <mat-select placeholder="Select color">
+                                <mat-option [value]="'val'">house</mat-option>
+                                <mat-option [value]="'val'">house</mat-option>
+                                <mat-option [value]="'val'">house</mat-option>
+                                <mat-option [value]="'val'">house</mat-option>
+                            </mat-select>
+                        </div>
+
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12 py-2">
+                    <div class="row">
+                        <div class="col-4">
+                            <span class="qant-select">Qauntity:</span>
+                        </div>
+                        <div class="col-4">
+                            <div class="row">
+                                <button mat-icon-button>
+                                    <mat-icon aria-label="decrease qauntity button">remove</mat-icon>
+                                </button>
+                                <div class="px-2 pt-2">
+                                    1
+                                </div>
+                                <button mat-icon-button>
+                                    <mat-icon aria-label="increase qauntity button">add</mat-icon>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="col-4">
+                            contact for buying in bulk
+                        </div>
+
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="buyButton col-10">
+                            <button type="button" mdbBtn color="orange" mdbWavesEffect class="w-100">Buy Now</button>
+                        </div>
+                        <div class="savebtn-icon col-2">
+                            <button mat-icon-button>
+                                <mat-icon aria-label="save icon">favorite_border</mat-icon>
+                            </button></div>
+                    </div>
+                </div>
+                <mat-divider></mat-divider>
+                <div class="col-12">
+                    <div>Share with friends</div>
+                    <div class="row">
+                        <button mat-icon-button>
+                            <mat-icon aria-label="share on instagram icon" svgIcon="ig"></mat-icon>
+                        </button>
+
+                        <button mat-icon-button>
+                            <mat-icon aria-label="share of facebook icon" svgIcon="facebook"></mat-icon>
+                        </button>
+
+                        <button mat-icon-button>
+                            <mat-icon aria-label="share on twitter" svgIcon="twitter"></mat-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="py-3">
+        <mat-accordion multi="true">
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Overview
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Description
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Shipping
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Return Policy
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        Reviews
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>This is the primary content of the panel.</p>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+    <mat-divider></mat-divider>
+
+    <div class="scrollmenu">
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+
+
+        <button mat-button [routerLink]="['/products/']" class="no-padding r-btn">
+            <img width="130" height="130">
+            <p class="r-title"> This is the primary content of the panel. </p>
+            <p class="r-price"> price</p>
+        </button>
+    </div>
+
+</div>

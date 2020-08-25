@@ -1,0 +1,33 @@
+.creator {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.sidenav {
+    padding-bottom: 200px;
+    height: 100%; 
+    width: 350px;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .brands-cell {
+      height: 400px;
+      overflow-y: auto;
+  }
+  .cat-title {
+      font-size: 60px;
+      font-weight: bolder;
+      padding-left: 30px;
+  }
+  .example-container {
+ 
+    height: 500px;
+    overflow-y: auto;
+
+  }
+  
+  
+  

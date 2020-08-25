@@ -1,0 +1,425 @@
+<div class="d-md-none">
+  <div fxLayout="row">
+    <mat-toolbar>
+      <div fxFlex="15">
+        <button mat-icon-button aria-label="icon-button with menu icon">
+          <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+      </div>
+
+
+      <div fxFlex="20">
+        <span>Bavy</span>
+      </div>
+      <div fxFlex="50"></div>
+
+      <div fxFlex="10">
+        <button fxLayoutAlign="center center" matBadge="8" matBadgePosition="after" mat-icon-button
+          aria-label="icon-button with cart icon" href="#">
+          <mat-icon>shopping_basket</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar>
+
+  </div>
+  <div fxLayout="row">
+    <mat-toolbar>
+      <div fxFlex="100">
+        <input class="search-bar" placeholder=" Search for Products, brands and categories">
+      </div>
+    </mat-toolbar>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-evenly  center" class="head-icon-bg">
+
+    <a fxLayoutAlign="center center" mat-icon-button aria-label="icon-button with cart icon" href="#">
+      <mat-icon>all_inboxs</mat-icon>
+    </a>
+
+
+    <a fxLayoutAlign="center center" mat-icon-button aria-label="icon-button with cart icon"
+      [routerLink]="['/categories']" routerLinkActive="router-link-active">
+      <mat-icon svgIcon="fashion"></mat-icon>
+    </a>
+
+    <a fxLayoutAlign="center center" mat-icon-button aria-label="icon-button with cart icon" href="#">
+      <mat-icon svgIcon="beauty"></mat-icon>
+    </a>
+
+    <a fxLayoutAlign="center center" mat-icon-button aria-label="icon-button with cart icon" href="#">
+      <mat-icon svgIcon="men"></mat-icon>
+    </a>
+
+    <a fxLayoutAlign="center center" mat-icon-button aria-label="icon-button with cart icon" href="#">
+      <mat-icon svgIcon="women"></mat-icon>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="d-none d-md-block">
+  <div fxLayout="row">
+    <mat-toolbar>
+      <div fxFlex="5"></div>
+
+      <div fxFlex="10">
+        <span>Bavy</span>
+      </div>
+
+      <div fxFlex="50">
+        <input matInput class="search-bar" placeholder=" Search for Products, brands and categories">
+        <button mat-button>
+          <mat-icon matSuffix>search</mat-icon>
+        </button>
+      </div>
+
+      <div fxFlex="10">
+        <button mat-button routerLink="link">Sell on bavy</button>
+      </div>
+
+      <div fxFlex="10">
+        <button mat-button routerLink="link">Signup/Login</button>
+      </div>
+
+      <div fxFlex="10">
+        <button mat-button routerLink="link" matBadge="0" matBadgePosition="postion" matBadgeOverlap="overlap">
+          <mat-icon aria-label="label">shopping_bag</mat-icon>
+          <span>
+            My Cart
+          </span>
+
+        </button>
+      </div>
+    </mat-toolbar>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="space-around center">
+    <button mat-button [matMenuTriggerFor]="Fashion">Fashion</button>
+    <button mat-button [matMenuTriggerFor]="Beauty">Beauty</button>
+    <button mat-button [matMenuTriggerFor]="Fragrance">Fragrance</button>
+    <button mat-button>Textile</button>
+  </div>
+
+
+  <mat-menu #Fashion="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="men">Men</button>
+    <button mat-menu-item [matMenuTriggerFor]="Women">Women</button>
+    <button mat-menu-item>All</button>
+  </mat-menu>
+
+  <mat-menu #Beauty="matMenu">
+    <button mat-menu-item [routerLink]="['/categories']" routerLinkActive="router-link-active">All</button>
+    <button mat-menu-item>Hair and Skin care</button>
+    <button mat-menu-item>Extensions and Wigs</button>
+    <button mat-menu-item>Hair Accessories</button>
+    <button mat-menu-item>Hair loss porducts</button>
+    <button mat-menu-item>Moisturizers</button>
+    <button mat-menu-item>Cleansers</button>
+    <button mat-menu-item>Exfoliators</button>
+    <button mat-menu-item>Anti-aging</button>
+    <button mat-menu-item>Treatments</button>
+  </mat-menu>
+
+
+
+  <mat-menu #men="matMenu">
+    <button mat-menu-item>All</button>
+    <button mat-menu-item>Watches</button>
+    <button mat-menu-item>clothing</button>
+    <button mat-menu-item>Shoes</button>
+    <button mat-menu-item>Accessories</button>
+    <button mat-menu-item>Jewelry</button>
+  </mat-menu>
+
+  <mat-menu #Women="matMenu">
+    <button mat-menu-item>All</button>
+    <button mat-menu-item>Clothing</button>
+    <button mat-menu-item>Watches</button>
+    <button mat-menu-item>Shoes</button>
+    <button mat-menu-item>Accessories</button>
+    <button mat-menu-item>Handbags and wallets</button>
+    <button mat-menu-item>Jewelry</button>
+
+  </mat-menu>
+
+  <mat-menu #Fragrance="matMenu">
+    <button mat-menu-item>All</button>
+    <button mat-menu-item>Women</button>
+    <button mat-menu-item>Men</button>
+    <button mat-menu-item>Unisex</button>
+  </mat-menu>
+</div>
+
+
+
+
+
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push">
+    <div fxLayout="row" fxLayoutAlign="space-around center" class="user-btn-conteiner">
+      <div fxFlex="50">
+        <button mat-stroked-button color="primary" class="login-signup">Login</button>
+      </div>
+
+      <div fxFlex="50">
+        <button mat-stroked-button color="primary" class="login-signup">Signup</button>
+      </div>
+    </div>
+
+
+    <div fxLayout="column">
+      <div fxLayout="row" class="tabs-conteiner">
+
+
+        <div fxFlex="50">
+          <div fxLayout="row" class="tabs">
+            <button mat-button>
+              <div fxFlex="30">
+                <mat-icon class="menu-tabs-icons" color="secondary">shopping_bag</mat-icon>
+              </div>
+              <div fxFlex="70">
+                <div fxLayout="row">
+                  <p class="tabs-header">My Cart</p>
+                </div>
+
+                <div fxLayout="row">
+                  <p class="tabs-text">0 Items in cart</p>
+                </div>
+
+              </div>
+            </button>
+          </div>
+        </div>
+
+
+
+
+        <div fxFlex="50">
+          <div fxLayout="row" class="tabs">
+            <button mat-button>
+              <div fxFlex="30">
+                <mat-icon class="menu-tabs-icons" color="secondary">local_offer</mat-icon>
+              </div>
+              <div fxFlex="70">
+                <div fxLayout="row">
+                  <p class="tabs-header">Sell on Bavy</p>
+                </div>
+
+                <div fxLayout="row">
+                  <p class="tabs-text">Join the train</p>
+                </div>
+              </div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+      <div fxLayout="row" class="tabs-conteiner">
+        <div fxFlex="50">
+          <div fxLayout="row" class="tabs">
+            <button mat-button>
+              <div fxFlex="30">
+                <mat-icon class="menu-tabs-icons" color="secondary">contact_support</mat-icon>
+              </div>
+              <div fxFlex="70">
+                <div fxLayout="row">
+                  <p class="tabs-header">Contact Us</p>
+                </div>
+
+                <div fxLayout="row">
+                  <p class="tabs-text">Get in torch</p>
+                </div>
+
+              </div>
+            </button>
+          </div>
+        </div>
+
+
+        <div fxFlex="50">
+          <div fxLayout="row" class="tabs">
+            <button mat-button>
+              <div fxFlex="30">
+                <mat-icon class="menu-tabs-icons" color="secondary">explore</mat-icon>
+              </div>
+              <div fxFlex="70">
+                <div fxLayout="row">
+                  <p class="tabs-header">Explor Brands</p>
+                </div>
+
+                <div fxLayout="row">
+                  <p class="tabs-text">Shop from your</p>
+                </div>
+
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 fxLayout="row" fxLayoutAlign="space-around center" class="pt-3">
+      Categories
+    </h2>
+
+    <mat-accordion *ngFor="let item of information; let i = index">
+      <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+        (click)="toggleSection(i)">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{item.name}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <span *ngFor="let child of item.children; let j = index">
+          <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false"
+            (click)="toggleSection(i)">
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                {{child.name}}
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list *ngFor="let title of child.children">
+              <mat-list-item role="listitem">{{title.name}}</mat-list-item>
+            </mat-list>
+          </mat-expansion-panel>
+        </span>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+
+    <div fxLayout="column" class="app-btn-conteiner">
+      <h2 fxLayout="row" fxLayoutAlign="space-around center" class="pt-3">
+        Download App
+      </h2>
+      <div fxLayout="row" fxLayoutAlign="space-around center" class="pt-1">
+        <div fxFlex="100">
+          <button mat-stroked-button color="primary" class="download-app-icon">IOS</button>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="space-around center" class="pt-3">
+        <div fxFlex="100">
+          <button mat-stroked-button color="primary" class="download-app-icon">Andriod</button>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center" class="pt-3">
+      <button mat-button routerLink="link">
+        <mat-icon>phone</mat-icon>
+        <span>Contact Us</span>
+      </button>
+    </div>
+
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div style="height: 88vh;">
+
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<footer class="page-footer font-small elegant-color-dark pt-4">
+  <div class="container-fluid text-center text-md-left">
+    <div class="row">
+      <div class="col-md-2 mb-md-0 mb-3">
+        <h5 class="text-uppercase">About bavy</h5>
+        <ul class="list-unstyled">
+          <li>
+            <button mat-button routerLink="#">Contact Us</button>
+          </li>
+          <li>
+            <button mat-button routerLink="#">About Us</button>
+          </li>
+          <li>
+            <button mat-button routerLink="#">Our Blog</button>
+          </li>
+          <li>
+            <button mat-button routerLink="#">Terms & Conditions</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Buying On Bavy</h5>
+        <ul class="list-unstyled">
+          <li>
+            <button mat-button routerLink="#">FAQs</button>
+          </li>
+          <li>
+            <button mat-button routerLink="#">Delivery</button>
+          </li>
+          <li>
+            <button mat-button routerLink="#">Bavy Return Policy</button>
+          </li>
+          <li>
+            <button mat-button routerLink="#">Bulk Purchase</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2 mb-md-0 mb-3">
+        <h5 class="text-uppercase">Selling today</h5>
+        <ul class="list-unstyled">
+          <li>
+            <button mat-button routerLink="#">Start Selling Today</button>
+          </li>
+        </ul>
+      </div>
+
+
+
+
+
+
+
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <div class="col-md-6 mt-md-0 mt-3">
+        <h5 class="text-uppercase">Download Apps and Follow Us</h5>
+        <div class="col-12">
+          <div class="row justify-content-center">Downlaod Apps</div>
+          <div class="row">
+            <div class="col-6">
+              <button type="button" mdbBtn color="dark" routerLink="#" mdbWavesEffect>
+                <mat-icon svgIcon="ios" aria-label="appple app store icon"></mat-icon>
+                <span class="ml-2"> Downlaod On App Store</span>
+              </button>
+            </div>
+            <div class="col-6">
+              <button type="button" mdbBtn color="dark" routerLink="#" mdbWavesEffect>
+                <mat-icon svgIcon="md" aria-label="google play store icon"></mat-icon>
+                <span class="ml-2"> Downlaod On Play Store</span>
+              </button>
+            </div>
+          </div>
+          <div class="row justify-content-center pt-2 pb-2 text-bold">Follow Us</div>
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            <button mat-icon-button>
+              <mat-icon svgIcon="facebook" aria-label="facebook icon"></mat-icon>
+            </button>
+            <button mat-icon-button>
+
+              <mat-icon aria-label="Twitter icon" svgIcon="twitter"></mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon aria-label="instagram icon" svgIcon="ig"></mat-icon>
+            </button>
+            <button mat-icon-button>
+              <mat-icon aria-label="linkedin icon" svgIcon="linkedin"></mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <span>Bavy.com. All rights reserved</span>
+  </div>
+</footer>

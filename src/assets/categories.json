@@ -1,0 +1,124 @@
+{
+    "CatItems": [
+        {
+            "name": "Fashion",
+            "children": [
+                {
+                    "name": "men",
+                    "children": [
+                        {
+                            "name": "watches"
+                        },
+                        {
+                            "name": "clothing"
+                        },
+                        {
+                            "name": "Shoes"
+                        },
+                        {
+                            "name": "Accessories"
+                        },
+                        {
+                            "name": "Jewelry"
+                        }
+                    ]
+                },
+                {
+                    "name": "women",
+                    "children": [
+                        {
+                            "name": "Clothing",
+                            "query": "Clothing"
+                        },
+                        {
+                            "name": "Shoes",
+                            "query": "Shoes"
+                        },
+                        {
+                            "name": "watches",
+                            "query": "watches"
+                        },
+                        {
+                            "name": "Jewelry",
+                            "query": "Jewelry"
+                        },
+                        {
+                            "name": "handbags and wallets",
+                            "query": "HandbagsAndWallets"
+                        },
+                        {
+                            "name": "Womens accessories",
+                            "query": "WomensAccessories"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Beauty",
+            "children": [
+                {
+                    "name": "Hair and Skin care",
+                    "children": [
+                        {
+                            "name": "Extensions and Wigs",
+                            "query": "ExtensionsAndWigs"
+                        },
+                        {
+                            "name": "Hair and Scalp Care",
+                            "query": "HairAndScalpCare"
+                        },
+                        {
+                            "name": "Hair Accessories",
+                            "query": "HairAccessories"
+                        },
+                        {
+                            "name": "Hair loss porducts",
+                            "query": "HairLossPorducts"
+                        },
+                        {
+                            "name": "Moisturizers",
+                            "query": "moisturizers"
+                        },
+                        {
+                            "name": "Cleansers",
+                            "query": "cleansers"
+                        },
+                        {
+                            "name": "Exfoliators",
+                            "query": "exfoliators"
+                        },
+                        {
+                            "name": "Anti-aging",
+                            "query": "anti-aging"
+                        },
+                        {
+                            "name": "Treatments",
+                            "query": "treatments"
+                        }
+                    ]
+                },
+                {
+                    "name": "Fragrance",
+                    "children": [
+                        {
+                            "name": "Women",
+                            "query": "Women"
+                        },
+                        {
+                            "name": "Men",
+                            "query": "Men"
+                        },
+                        {
+                            "name": "Unisex",
+                            "query": "Unisex"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Textail"
+        }
+    ]
+}
